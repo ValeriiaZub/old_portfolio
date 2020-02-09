@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<!-- Thank you for looking at my code ;)-->
+
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Valeriia Zub's portfolio website with examples of work, experience. Weather website page.">
+    <link rel="stylesheet" href="../css/design.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque:500|Lexend+Deca|Mansalva&display=swap" rel="stylesheet">
+    <title>Valeriia Zub</title>
+</head>
+
+<body>
+    <div class="top-nav" id="section1" data-aos="fade" data-aos-duration="1500">
+        <a href="../index.html"><img class="content-image link-nav" src="../images/assetWeather.svg" alt="logo"></a>
+    </div>
+
+    <div class="content-wrapper">
+        <div data-aos="fade" data-aos-duration="1500">
+            <h1 class="project-name bot-mar-0">WeatherNow</h1>
+            <h3 class="sub-heading top-mar-0">Weather website, spring 2019</h3>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="3000">
+            <img class="content-image" src="../images/weather/weather2.png" alt="weather website opened on different devices">
+            <h3 class="sub-heading">Objective</h3>
+            <p class="project-par">The goal was to create a website that would give a user all the <span>needed information about the weather at the current moment</span>. </p>
+            <h3 class="sub-heading">Looking at existing platforms</h3>
+            <img class="content-image" src="../images/weather/exploration.png" alt="different weather platforms are compared">
+            <p class="project-par">Looking at the popular weather apps/websites helped to find the <span>design pattern</span>, it's strong and weak sides. Keeping the interface simple was the final decision after exploration.</p>
+            <h3 class="sub-heading">Front-end</h3>
+            <p class="project-par">Because <span>people mostly need current weather information</span> ,main focus was mode on the first section - current weather state. Also Celsius to Fahrenheit button is ususlly hard to find. It was moved to the top right section to improve UX. But with a transparent background to reduce attention to it.</p>
+            <div class="wireframes grid-5-col grd-gap">
+                <img class="content-image" src="../images/weather/iPhone1.png" alt="wireframe layout experiment">
+                <img class="content-image" src="../images/weather/iPhone2.png" alt="wireframe layout experiment">
+                <img class="content-image" src="../images/weather/iPhone3.png" alt="wireframe layout experiment">
+                <img class="content-image" src="../images/weather/iPhone4.png" alt="wireframe layout experiment">
+                <img class="content-image" src="../images/weather/iPhone5.png" alt="wireframe layout experiment"></div>
+            <p class="project-par">Wireframes. Content position exploration.</p>
+            <p class="project-par">Mainly inspired by the weather IOS app style colours were inverted to <span>achieve the best contrast</span> with the moving background. </p>
+            <div class="grid-4-col grd-gap">
+                <img class="content-image" src="../images/weather/2/iPhone5.png" alt="chosen gray box layout ">
+                <img class="content-image" src="../images/weather/2/iPhone6.png" alt="bringing content to black and white wireframe">
+                <img class="content-image" src="../images/weather/2/iPhone7.png" alt="bringing content to black and white wireframe">
+                <img class="content-image" src="../images/weather/2/iPhone8.png" alt="bringing colour to the wireframe">
+            </div>
+
+            <h3 class="sub-heading">Back-end part</h3>
+            <div class="grid-2-col to-1-col">
+                <img src="../images/weather/weather.png" class="content-image add-mar" alt="">
+                <p class="project-par"><a class="link" href="https://developers.google.com/maps/documentation/geocoding/start" target="_blank">Google maps API </a>was used to determine location of the device. After, latitude and longitude are put into <a class="link" href="https://openweathermap.org/current" target="_blank">openwether </a>request. This <span>allows the website work all around the world any time</span>. Both these API sources are free and open, so no API access key was needed.<br><br>
+                    <a class="link" href="https://ixd515.firebird.sheridanc.on.ca/weather/" target="_blank" alt="website open on the phone">View the website</a> </p>
+            </div>
+            <h3 class="sub-heading">Thoughts </h3>
+            <p class="project-par">If there were more time the website would be able to predict wether in the future. Animation would be more smooth. Because there are so many weather states more icons and videos, weather descriptions could have been made. </p>
+            <div class="grid-3-col bottom-nav">
+                <a class="link-to-top " href="audi.html">
+                    <i class="fas fa-arrow-left icon-to-top"></i>
+                    <div class="disappear">Previous project </div>
+                </a>
+                <a class="link-to-top  centered" href="#section1">
+                    <div class="disappear centered-in">Return</div>
+                    <i class="fas fa-arrow-up icon-to-top centered-in"></i>
+                </a>
+                <a href="powerSmart.html" class="link-to-top right-aligned">
+                    <div class="disappear ">Next project</div>
+                    <i class="fas fa-arrow-right icon-to-top "></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="mailto:val.zubb@gmail.com" class=""><i class="fas fa-envelope link icon"></i></a> <a href="https://www.linkedin.com/in/valeriia-zub-69436a18b/" class="link" target="_blank"> <i class="fab fa-linkedin-in link icon"></i></a> <a class="link no-line" href="https://drive.google.com/file/d/14274YLzyoODYDIHNzuFP1EX_FX75mamX/view?usp=sharing" target="_blank">resume</a>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+</body></html>
