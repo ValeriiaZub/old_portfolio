@@ -39,19 +39,19 @@ function setup() {
 }
 
 function draw() {
-    background(200);
+    background(250);
 
     // figure out x rotation
     const x_rotate = ((mouseY / (windowY / 2)) - 1) * -1;
     const y_rotate = ((mouseX / (windowX / 2)) - 1) * -1;
-
+    imageMode(CENTER);
     rotateX(PI);
-    translate(-1350, 0, 1200);
+    translate(0, 0, 1500);
     rotateX(x_rotate);
-    // rotateY(y_rotate);
-    // translate(p5.Vector.fromAngle(millis() / 1000, 40));
-    // rotateX(frameCount * 0.01);
-    // rotateY(frameCount * 0.01);
+    rotateY(y_rotate);
+    translate(p5.Vector.fromAngle(millis() / 10000, 40));
+    rotateX(frameCount * 0.001);
+    rotateY(frameCount * 0.001);
     normalMaterial();
     model(introObj);
 }
