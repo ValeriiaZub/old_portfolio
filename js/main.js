@@ -39,12 +39,12 @@ function setup() {
 }
 
 function draw() {
-    background(200);
+    background(250);
 
     // figure out x rotation
     const x_rotate = ((mouseY / (windowY / 2)) - 1) * -1;
     const y_rotate = ((mouseX / (windowX / 2)) - 1) * -1;
-
+    imageMode(CENTER);
     rotateX(PI);
     // translate(-1350, 0, 1200);
     rotateX(x_rotate);
