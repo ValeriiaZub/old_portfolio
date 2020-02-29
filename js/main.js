@@ -27,7 +27,7 @@ window.addEventListener("resize", (ev) => {
 })
 
 function preload() {
-    introObj = loadModel('/assets/intro2.obj');
+    introObj = loadModel('/assets/intro3.obj');
     windowX = window.innerWidth;
     windowY = window.innerHeight;
 }
@@ -46,12 +46,12 @@ function draw() {
     const y_rotate = ((mouseX / (windowX / 2)) - 1) * -1;
     imageMode(CENTER);
     rotateX(PI);
-    translate(0, 0, 1500);
+    // translate(-1350, 0, 1200);
     rotateX(x_rotate);
     rotateY(y_rotate);
-    translate(p5.Vector.fromAngle(millis() / 10000, 40));
-    rotateX(frameCount * 0.001);
-    rotateY(frameCount * 0.001);
+    // translate(p5.Vector.fromAngle(millis() / 1000, 40));
+    // rotateX(frameCount * 0.01);
+    // rotateY(frameCount * 0.01);
     normalMaterial();
     model(introObj);
 }
