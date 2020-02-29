@@ -27,7 +27,8 @@ window.addEventListener("resize", (ev) => {
 })
 
 function preload() {
-    introObj = loadModel('/assets/intro3.obj');
+    introObj = loadModel('/assets/intro4.obj'); 
+    console.log(introObj);
     windowX = window.innerWidth;
     windowY = window.innerHeight;
 }
@@ -39,14 +40,15 @@ function setup() {
 }
 
 function draw() {
-    background(250);
+    background(10);
 
     // figure out x rotation
-    const x_rotate = ((mouseY / (windowY / 2)) - 1) * -1;
-    const y_rotate = ((mouseX / (windowX / 2)) - 1) * -1;
-    imageMode(CENTER);
+    const x_rotate = ((mouseY / (windowY / 2)) - 1) * -.15;
+    const y_rotate = ((mouseX / (windowX / 2)) - 1) * -.15;
+    push();
+    // imageMode(CENTER);
     rotateX(PI);
-    // translate(-1350, 0, 1200);
+    translate(0, 0, -250);
     rotateX(x_rotate);
     rotateY(y_rotate);
     // translate(p5.Vector.fromAngle(millis() / 1000, 40));
@@ -54,4 +56,10 @@ function draw() {
     // rotateY(frameCount * 0.01);
     normalMaterial();
     model(introObj);
+    pop();
+
+    push();
+    translate(100, 100, sin(deltaTime * 0.001) * 100);
+    box(70, 70, 70);
+    pop();
 }
