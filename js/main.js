@@ -27,7 +27,7 @@ window.addEventListener("resize", (ev) => {
 })
 
 function preload() {
-    introObj = loadModel('/assets/intro4.obj'); 
+    introObj = loadModel('/assets/intro5.obj'); 
     console.log(introObj);
     windowX = window.innerWidth;
     windowY = window.innerHeight;
