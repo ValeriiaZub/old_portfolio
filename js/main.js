@@ -16,23 +16,23 @@ let canvas, texture, introObj;
 let mouseX, mouseY;
 let windowX, windowY;
 var cubes = [];
-var MAX_CUBES = 20;
+var MAX_CUBES = 75;
 var RAND_SEED = 1000;
-var MAX_TIME = 7 * 1000;
-var MIN_TIME = 3 * 1000;
+var MAX_TIME = 12 * 1000;
+var MIN_TIME = 5 * 1000;
 var DISTANCE = 5200;
 var MAX_BOX_SIZE = 100;
 var MIN_BOX_SIZE = 25;
 
 function CreateCube() {
     let container = document.getElementById('canvasContainer');
-    const max_width = container.clientWidth / 2;
+    const max_width = container.clientWidth;
     const max_height = container.clientHeight / 2;
     const textZ = -(windowX / 4) * 2.75 * (windowY / windowX);
     let direction = random();
-    let y = random() * textZ;
+    let y = random() * 600 + 500;
     if (direction <= 0.5) {
-        y += max_height - textZ;
+        y = random() * 600 - 850;
     }
     return {
         x: (random() * max_width) * 2 - max_width,
@@ -55,7 +55,7 @@ window.addEventListener("resize", (ev) => {
 })
 
 function preload() {
-    introObj = loadModel('/assets/intro4.obj');
+    introObj = loadModel('/assets/intro5.obj');
     windowX = window.innerWidth;
     windowY = window.innerHeight;
 }
@@ -74,11 +74,11 @@ function setup() {
 
 function draw() {
     background(250);
-    ambientLight(100); // white light
+    lightFalloff(1, 0, 0);
+    ambientLight(400); // white light
 
     let dirX = (mouseX / windowX - 0.5) * 2;
     let dirY = (mouseY / windowY - 0.5) * 2;
-    lightFalloff(1, 0, 0);
     directionalLight(250, 250, 250, -dirX, -dirY, -1);
 
     // figure out x rotation
@@ -87,12 +87,15 @@ function draw() {
     push();
     // imageMode(CENTER);
     rotateX(PI);
-    translate(0, 0, -(windowX / 4) * 2.75 * (windowY / windowX));
+    translate(0, 0, -(windowX / 4) * 1.4 * (windowY / windowX));
     rotateX(x_rotate);
     rotateY(y_rotate);
     // translate(p5.Vector.fromAngle(millis() / 1000, 40));
     // rotateX(frameCount * 0.01);
     // rotateY(frameCount * 0.01);
+    // ambientMaterial(255, 255, 255)
+    ambientMaterial(70, 130, 230);
+    noStroke();
     model(introObj);
     pop();
 
