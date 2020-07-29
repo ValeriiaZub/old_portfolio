@@ -1,0 +1,18 @@
+
+.tags{
+    display: flex;
+    flex-direction: row;
+    .tag{
+        background-color: $button-bg-color;
+        font-size: $regular;
+        margin-right: $small;
+        padding:$small;
+        font-family: heavy;
+        display: inline;
+        border-radius: $medium;
+        color: $secondary-color;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}

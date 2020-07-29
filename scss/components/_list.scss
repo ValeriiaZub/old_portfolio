@@ -1,0 +1,12 @@
+ul{
+    width: 60%;
+    list-style: none;
+}
+li{
+    margin: 1rem 0;
+    list-style-type: disc;
+}
+li:before {
+    padding-right: 8px;
+    color: $primary-color-1;
+}

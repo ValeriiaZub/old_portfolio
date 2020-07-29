@@ -1,207 +1,372 @@
+<!--------- Thank you for looking at my code :) ---------->
 <!DOCTYPE html>
-<!-- Thank you for looking at my code ;)-->
-<html lang="">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Valeriia Zub's portfolio website with examples of work, experience. Sleep calculator page.">
-    <link rel="stylesheet" href="../css/design.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../js/main.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="../css/main.css" type="text/css" />
+    <link rel="icon" href="../img/favicon.svg" type="image/gif">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque:500|Lexend+Deca|Mansalva&display=swap"
-        rel="stylesheet">
-    <title>Valeriia Zub</title>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <title>Valeriia Zub</title>
 </head>
 
 <body>
-    <div class="top-nav" id="section1" data-aos="fade" data-aos-duration="1500">
-        <a href="../index.html"><img class="content-image link-nav" src="../images/assetAudi.svg" alt="logo"></a>
-    </div>
+    <div class="root">
+        <header>
+            <a href="../index.html"><img class="logo" src="/img/logo.svg"></a>
+        </header>
 
-    <div class="content-wrapper">
-        <div data-aos="fade" data-aos-duration="1500">
-            <h1 class="project-name bot-mar-0">Audi Web Connect</h1>
-            <h3 class="sub-heading top-mar-0">2nd place on Audi Red Hackathon — November - December 2019</h3>
+        <div class="fold to-col-1" data-aos="fade-up" data-aos-duration="1000">
+            <img src="../img/audi/audiscreen.svg" class="mt-3 add-pad-10">
+            <h2 class="al-ver">Web application — solution to onboard users with myAudi app. </h2>
         </div>
-        <div data-aos="fade-up" data-aos-duration="3000">
-            <img class="content-image add-mar" src="../images/audi/inCar.png" alt="Person holds phone in a car">
-            <h3 class="sub-heading">About the challenge </h3>
-            <p class="project-par">Powered by Audi Canada and BIMM, RED a <a class="link" target="_blank"
-                    href="https://www.audi.ca/ca/web/en/red.html">competition</a> inspired by the theme “Mobility as a
-                Service”.
-            </p>
-            <div class="grid-2-col to-1-col">
+        <section>
+            <h5>Overview</h5>
+            <div class='side_info grid col-4 to'>
                 <div>
-                    <h3 class="sub-heading">Looking at MyAudi</h3>
-                    <p class="project-par"> We looked at the existing platform Audi has, myAudi. <span>Now the app is
-                            just for the car
-                            owners</span> and does not allow for passengers to access all the premium features inside
-                        the car from their
-                        phones.Unfortunately, accessing premium features like seat massage is awkward, and most
-                        customers
-                        probably
-                        won’t even realize the features exist without being prompted.
+                    <h3>Team</h3>
+                    <p>Alex Borthwick, Josh Vandenbor</p>
+                </div>
+                <div>
+                    <h3>Role</h3>
+                    <p>Designer</p>
+                </div>
+                <div>
+                    <h3>Tools </h3>
+                    <p>Generative Brainstorming, Google suite, Paper prototyping, Adobe XD</p>
+                </div>
+                <div>
+                    <h3>Duration</h3>
+                    <p>4 weeks</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="grid col-2 to-col-1">
+                <div class="al-ver">
+                    <h5>About the challenge</h5>
+                    <p>
+                        Powered by Audi Canada and BIMM, RED a competition inspired by the theme “Mobility as a
+                        Service”.
+                    </p>
+                </div>
+                <img src="../img/audi/teamPresenting.png">
+            </div>
+        </section>
+        <section>
+            <h5>
+                LOOKING AT Existing app — MYAUDI
+            </h5>
+            <p>
+                We looked at the existing platform Audi has, myAudi. Now the app is just for the car owners and does not
+                allow for passengers to access all the premium features inside the car from their phones.
+            </p>
+            <img src="../img/audi/nativeApp.svg" class="centered m-w-500">
+        </section>
+        <section>
+            <h5>
+                Looking at the situation form the user perspective
+            </h5>
+            <p>
+                When you get into a car, you want the experience tailored to you. Imagine getting in an Uber and having
+                a massage! Unfortunately, accessing premium features like seat massage is awkward, and most customers
+                probably won’t even realize the features exist without being prompted.
+            </p>
+            <div class='side_info mt-5'>
+                <p class="accent">
+                    Set of features people deserve accessing easily when using a luxurious car:
+                </p>
+                <ul>
+                    <li>
+                        Seamless driving experience
+                    </li>
+                    <li>
+                        Fast and easy access to the car features
+                    </li>
+                    <li>
+                        Understanding of what features they may use
+                    </li>
+                    <li>
+                        More control
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <h5>Problem statement</h5>
+    </div>
+    <div class="p_statement mb-15">
+        <h2 class="p_statement__text">How might we help Audi customers gain more control of their vehicle and give them
+            better access to all the premium features they may not be aware of?
+        </h2>
+    </div>
+    <div class='root'>
+        <section class="mt-15">
+            <h5>Audi has many apps…</h5>
+            <p>
+                Audi has many apps and all of them serve a very little purpose. Also, we found out that NOBODY wants to
+                download an app to try it out.
+            </p>
+            <div class="centered accent accent-box m-w-500 mt-5">
+                To address this problem my team created web application prototype to onboard users with myAudi app.
+            </div>
+        </section>
+        <section>
+            <h5>
+                Areas of focus
+            </h5>
+            <div class="grid col-3 grid-gap-2r">
+                <div>
+                    <img class="centered icon-large" src="../img/audi/icons/valet-parking-large.svg">
+                    <p class="centered accent">Security</p>
+                    <p>It is important for the application to be secure. Data is the new resource. </p>
+                </div>
+                <div>
+                    <img class="centered icon-large" src="../img/audi/icons/car-handover-large.svg">
+                    <p class="centered accent">Control</p>
+                    <p>Passengers and drivers need a better way to control and make use of the vehicle.</p>
+                </div>
+                <div>
+                    <img class="centered icon-large" src="../img/audi/icons/connect-key-large.svg">
+                    <p class="centered accent">Communication</p>
+                    <p>We also looked at the problem as an opportunity to establish stronger customer — brand relations.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h5>
+                Design strategy
+            </h5>
+            <p>
+                The application has been designed with brand consistency to the native mobile app with some adaptations
+                to better fit within a web app format.
+            </p>
+            <p>
+                We defined four main options for the e-tron car users:
+            </p>
+            <div class="grid col-4 m-w-500 centered mt-5">
+                <div>
+                    <img class="icon-large centered" src="../img/audi/icons/audio-volume-large.svg">
+                    <p class="accent centered">
+                        audio
                     </p>
                 </div>
                 <div>
-                    <img class="content-image add-mar" src="../images/audi/comapredDevices.png"
-                        alt="Native UI compared to designed web version">
-                    <div class="grid-2-col">
-                        <p class="project-par centered">MyAudi - native app</p>
-                        <p class="project-par centered">Web application</p>
-                    </div>
+                    <img class="icon-large centered" src="../img/audi/icons/idea-large.svg">
+                    <p class="accent centered">
+                        lights
+                    </p>
                 </div>
-
-            </div>
-
-
-            <div class="grid-2-col to-1-col">
                 <div>
-                    <h3 class="sub-heading">Solution</h3>
-                    <p class="project-par"> To address this problem my team created <a class="link"
-                            href="https://xd.adobe.com/view/696b32b7-56b2-45b3-4020-36c8160527fd-1f5a/"> web application
-                            prototype</a> to onboard
-                        users with myAudi app. With the solution, a <span>customer can simply scan a QR code from the
-                            driver</span>, and
-                        instantly have access to all of these features right in front of them on their phone. With an
-                        intuitive
-                        design, it is obvious what you can control, and what features are available. </p>
+                    <img class="icon-large centered" src="../img/audi/icons/interior-configuration-large.svg">
+                    <p class="accent centered">
+                        seats
+                    </p>
                 </div>
-                <img class="content-image add-mar" src="../images/audi/iphone2.png" alt="Loading screen">
+                <div>
+                    <img class="icon-large centered" src="../img/audi/icons/climate-auto-large.svg">
+                    <p class="accent centered">
+                        climate
+                    </p>
+                </div>
 
             </div>
-            <h3 class="sub-heading">Design Strategy </h3>
-            <p class="project-par">The application has been <span>designed with brand consistency</span> to the native
-                mobile app
-                with some adaptations to better fit within a web app format. <span>There are four main options</span> to
-                choose from
-                in the web application: audio, lights, climate, and seats.</p>
-            <img class="content-image" src="../images/audi/4sections.png" alt="Web application screenshots">
-
-            <h3 class="sub-heading">Brainstorming ideas for the interface</h3>
-            <div class="grid-2-col">
-                <img class="content-image" src="../images/audi/brainstorm1.jpg" alt="Picture of a whiteboard with some brainstorm ideas for the navigation">
-                <div class="grid-2-col">
-                    <img class="content-image" src="../images/audi/brainstorm2.jpg" alt="Picture of a whiteboard with some brainstorm ideas for the layout">
-                    <img class="content-image" src="../images/audi/brainstorm3.jpg" alt="Problem statements on the whiteboard">
+        </section>
+        <section>
+            <h5>
+                The way it would work
+            </h5>
+            <p>
+                The myAudi application on the driver’s phone will act as a mediator between the rideshare and the car.
+            </p>
+            <p class="accent">This ensures the driver has full control over the features accessed over the duration of
+                the trip.
+            </p>
+            <div class="grid col-7 centered mt-5">
+                <div class="hide">
+                    <img class="icon-large" src="../img/audi/icons/code-large.svg">
+                    <p>Pairing </p>
+                </div class="hide">
+                <img class="icon-small hide " src="../img/audi/icons/indicators-right.svg">
+                <div class="hide">
+                    <img class="icon-large " src="../img/audi/icons/mobile-phone-large.svg">
+                    <p>Passenger’s phone </p>
+                </div class="hide">
+                <img class="icon-large hide" src="../img/audi/icons/indicators-large.svg">
+                <div class="hide">
+                    <img class="icon-h " src="../img/audi/icons/mobile-phone-large-highlight.svg">
+                    <p>Driver’s phone </p>
+                </div>
+                <img class="icon-large hide" src="../img/audi/icons/indicators-large.svg">
+                <div class="hide">
+                    <img class="icon-large " src="../img/audi/icons/car-large.svg">
+                    <p>Car dashboard </p>
                 </div>
             </div>
-            <h3 class="sub-heading">The way it works </h3>
-            <p class="project-par">The myAudi application on the <span>driver’s phone will act as a mediator</span>
-                between the
-                rideshare and the car. This ensures <span>the driver has full control</span> over the features accessed
-                over the
-                duration of the trip. For example, it would be able to set tolerances to things like the music volume.
-                The driver would also be able to set a password for additional privacy. Also, <span>seat selection is
-                    important for the hierarchy</span> to solve the conflict between two or more paired devices. </p>
-            <img class="content-image" src="../images/audi/pairingEx.svg" alt="Scheme of device paring to a car">
+            <img src="../img/audi/how_works.svg" class="show mt-5">
 
 
-            <h3 class="sub-heading">Data is the new resource</h3>
-            <p class="project-par">This data can be very useful for knowing what preferences a person likes when they
-                ride, what features are used most often, and how to best market their features to prospective buyers.
-                This data also <span>lets Audi expand their knowledge of their consumer base</span>, answering questions
-                such as who
+        </section>
+        <section>
+            <h5>Possible device conflict and how it can be solved</h5>
+            <p>For example, it would be able for the driver to set tolerances to things like the music volume. The
+                driver would also be able to set a password for additional privacy.</p>
+
+            <div class="grid col-2 side_info">
+                <p class="accent al-ver">
+                    Seat selection page is important for the driver to set hierarchy to solve the conflict between two
+                    or more paired devices and remain in control of the car.
+                </p>
+                <img class="screen centered" src="../img/audi/screens/seat-selection.png">
+            </div>
+        </section>
+        <section>
+            <h5>
+                Data is the new resource
+            </h5>
+            <p>
+                This data can be very useful for knowing what preferences a person likes when they ride, what features
+                are used most often, and how to best market their features to prospective buyers.
+            </p>
+            <div class="centered accent accent-box m-w-500 mt-5">
+                This data also lets Audi expand their knowledge of their consumer base, answering questions such as who
                 uses an Audi as a passenger, and what is Audi’s main demographic of people who use Audi in a rideshare.
+            </div>
+        </section>
+        <section>
+            <h5>Second horizon</h5>
+            <p>There are many input methods that could be employed in the future state.
             </p>
-            <div class="grid-2-col to-1-col">
-                <div>
-                    <h3 class="sub-heading">Second horizon</h3>
-                    <p class="project-par">There are many input methods that could be employed in the future state.
-                        Building on
-                        the system we developed instead of the rideshare scanning a QR code <span>more seamless input
-                            methods could be
-                            deployed</span> like voice or face recognition. These input methods could offer a more
-                        seamless experience
-                        having rideshare preferences sync as soon as they enter the car (this would require the
-                        rideshare to
-                        have MyAudi).</p>
-                </div>
-                <img class="content-image" src="../images/audi/voiseFaceRec.svg" alt="Voice and face recognition icons">
-            </div>
-
-            <h3 class="sub-heading">Looking further into the future </h3>
-            <p class="project-par">Having end-user anonymously access all the premium features during their rideshare
-                experience <span>builds up trust to the Audi brand</span>. In the future people might get so familiar
-                with the
-                digital service, so <span>it may become the reason why they would use audi cars to get somewhere</span>.
+            <img class="m-w-500 centered" src="../img/audi/icons/input.svg">
+            <p class="accent">
+                Building on the system we developed instead of the rideshare scanning a QR code more seamless input
+                methods could be deployed like voice or face recognition.
             </p>
-            <h3 class="sub-heading">Final designed screens</h3>
-            <div class="grid-2-col to-1-col">
-                <div class="add-mar">
-                    <p class="project-par centered">Seat selection page</p>
-                    <img class="content-image smallImg centered no-mar" src="../images/audi/screens/shadow-mockup5.png"
-                        alt="Prototype screenshot">
-                </div>
-                <div class="add-mar">
-                    <p class="project-par centered ">Main page</p>
-                    <img class="content-image smallImg centered no-mar" src="../images/audi/screens/shadow-mockup.png"
-                        alt="Prototype screenshot">
-                </div>
-                <div class="add-mar">
-                    <p class="project-par centered">Audio and Radio page</p>
-                    <img class="content-image smallImg centered no-mar" src="../images/audi/screens/shadow-mockup1.png"
-                        alt="Prototype screenshot">
-                </div>
-                <div class="add-mar">
-                    <p class="project-par centered">Climate control page</p>
-                    <img class="content-image smallImg centered no-mar" src="../images/audi/screens/shadow-mockup3.png"
-                        alt="Prototype screenshot">
-                </div>
-                <div class="add-mar">
-                    <p class="project-par centered">Light control page</p>
-                    <img class="content-image smallImg centered no-mar" src="../images/audi/screens/shadow-mockup6.png"
-                        alt="Prototype screenshot">
-                </div>
-                <div class="add-mar">
-                    <p class="project-par centered ">Seating page</p>
-                    <img class="content-image smallImg centered no-mar" src="../images/audi/screens/shadow-mockup7.png"
-                        alt="Prototype screenshot">
+            <ul class="mt-5">
+                <li>Helps accessibility</li>
+                <li>Allows for variety of tools</li>
+                <li>More data to collect</li>
+                <li>Sync as soon as a user enters a car</li>
+            </ul>
+        </section>
+        <section>
+            <h5>Looking further into the future</h5>
+            <p>Having end-user anonymously access all the premium features during their rideshare experience builds up
+                trust to the Audi brand. In the future people might get so familiar with the digital service, so it may
+                become the reason why they would use Audi cars to get somewhere.</p>
+            <img src="../img/audi/4sections.png">
+        </section>
+        <section>
+            <h5>Explaining screens using a scenario</h5>
+            <div class="grid col-2">
+                    <img class="screen centered" src="../img/audi/screens/scan.svg">  
+                <div class="al-ver">
+                    <h5>
+                        1. Pairing
+                    </h5>
+                    <p>
+                        Using a QR-code or any other pairing method, a user would connect with a car through a driver’s
+                        phone. This requires the Internet connection.
+                    </p>
                 </div>
             </div>
-            <a href="https://xd.adobe.com/view/696b32b7-56b2-45b3-4020-36c8160527fd-1f5a/" class="link"
-                target="_blank">Experience the prototype</a>
+            <hr>
+            <div class="grid col-2">
+                <div class="grid col-2">
+                    <img class="screen centered" src="../img/audi/screens/seat-selection.png">
+                    <img class="screen centered" src="../img/audi/screens/main.png">
+                </div>
+                <div class="al-ver"> 
+                    <h5>2. Logging in</h5>
+                    <p>
+                        After seat selection, the device is connected to the system and ready for making changes.
+                    </p>
+                </div>
+            </div>
+            <hr>
+                <div class="grid col-2">
+                <div class="grid col-2">
+                    <img class="screen centered" src="../img/audi/screens/light.png">
+                <img class="screen centered" src="../img/audi/screens/sound.png">
+                <img class="screen centered" src="../img/audi/screens/ac.png">
+                <img class="screen centered" src="../img/audi/screens/seat.png">
+                </div>
+                <div class="al-ver">
+                    <h5>3. Accessing features</h5>
+                    <p>Depending on the tolerance the driver would set, a passenger would have access to the most used
+                        interior settings from their phone.</p>
+                </div>
+            </div>
+           
+            <div class="grid col-4">
+                
+            </div>
+        </section>
+        <section>
+            <h5>
+                PROUD TO WIN 2ND PLACE
+            </h5>
+            <img src="../img/audi/teamPhotoHackathoners.png">
+        </section>
 
-
-            <h3 class="sub-heading">Proud to win 2nd place </h3>
-            <img class="content-image" src="../images/audi/teamPhotoHackathoners.png"
-                alt="My tem winning 2nd place in the competition">
-            <p class="project-par">Teammates: <a class="link"
-                    href="https://www.linkedin.com/in/alexanderborthwick/">Alex Borthwick</a> and <a class="link"
-                    href="https://www.linkedin.com/in/josh-vandenbor-187bb0180/">Josh Vandenbor</a></p>
-
-           <div class="grid-3-col bottom-nav">
-                <a class="link-to-top" href="powerSmart.html">
-                    <i class="fas fa-arrow-left icon-to-top"></i>
-                    <div class="disappear">Previous project </div>
+        <section class="bot-nav">
+            <h5 class="centered">
+                Discover more of my work…
+            </h5>
+            <div class="grid col-3 mt-5">
+                <a class="bot_nav__link_to_next_page al-ver" href="./mentorSpace.html">
+                    Design Solution for Mentors and Mentees.
                 </a>
-                <a class="link-to-top centered" href="#section1">
-                    <div class="disappear centered-in">Return</div>
-                    <i class="fas fa-arrow-up icon-to-top centered-in"></i>
+                <a class="bot_nav__link_to_next_page al-ver" href="./light.html">
+                    A Small Story about Light Pollution.
                 </a>
-                <a href="brigades.html" class="link-to-top right-aligned">
-                    <div class="disappear ">Next project</div>
-                    <i class="fas fa-arrow-right icon-to-top "></i>
+                <a class="bot_nav__link_to_next_page al-ver" href="./playground.html">
+                    Playgound!
                 </a>
             </div>
-        </div>
+
+        </section>
+
     </div>
-    <footer>
-        <a href="mailto:val.zubb@gmail.com" class=""><i class="fas fa-envelope link icon"></i></a> <a
-            href="https://www.linkedin.com/in/valeriia-zub-69436a18b/" class="link" target="_blank"> <i
-                class="fab fa-linkedin-in link icon"></i></a> <a class="link no-line"
-            href="https://drive.google.com/file/d/14274YLzyoODYDIHNzuFP1EX_FX75mamX/view?usp=sharing"
-            target="_blank">resume</a>
+
+    <footer class="bottom-end">
+        <div class="bottom-end__image">
+            <img src="../img/up-pointing.png" >
+            </div>
+            <div class="bottom-end__border"></div>
+        <div class="bottom-end__content" id="pointing">
+            <section>
+            <h3 class="mb-3">
+                Don’t leave yet, I have more projects to show!
+Use navigation to see them! Or are you ready for a team-up? Email me, we will have a conversation!
+            </h3>
+            <a href="mailto:val.zubb@gmail.com" class="btn-primary">
+                Let’s get in touch!
+            </a>
+        </section>
+        <section class='text-align-right'>
+            <h4>
+                Valeriia Zub
+            </h4>
+            <a href="mailto:val.zubb@gmail.com" class="btn-secondary">
+                <i class="far fa-envelope"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/valeriia-zub-69436a18b/" class=" btn-secondary ">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </section>
+        </div>
+            
+    
     </footer>
     <script>
         AOS.init();
-    </script>
+      </script>
+    
 </body>
 
 </html>

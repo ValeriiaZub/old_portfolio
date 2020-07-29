@@ -1,0 +1,33 @@
+.bottom-end {
+    position: relative;
+
+    &__image {
+        margin-left: 60%;
+        min-width: 250px;
+        max-width: 300px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    &__content {
+        padding: 2rem $margin-root-desktop;
+        margin-top: -28px;
+        position: relative;
+        display: grid;
+        grid-template-columns: 8fr 4fr;
+    }
+
+    &__border {
+        width: 100%;
+        border-top: 3px solid $button-bg-color;
+        z-index: -1;
+        position: absolute;
+        top: 118px;
+        left: 0;
+        right: 0;
+    }
+}
+
+#pointing {
+    margin-top: -25px;
+}

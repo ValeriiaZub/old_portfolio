@@ -1,0 +1,90 @@
+.fa-file{
+    margin-right:$small;
+    font-size: $medium;
+}
+
+.logo{
+    width: 3rem;
+    padding: 1rem 0 3rem;
+    box-sizing: border-box;
+}
+.no-mar-top {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.no-decoration{
+ text-decoration: none;
+}
+.centered{
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.add-top-mar{
+    margin-top: $grange;
+}
+.text-align-right{
+    text-align: right;
+}
+.pr-normal{
+    padding-right: $normal;
+}
+.add-pad-10{
+    padding: 10%;
+    box-sizing: border-box;
+}
+.al-ver{
+    display: block;
+    position: relative;
+    margin: auto;
+}
+.grid-gap-1r{
+    grid-gap: 1rem;
+}
+.m-w-500{
+    max-width: 500px;
+}
+.accent-box{
+    border-left: 3px solid $primary-color-1;
+    text-align: left;
+    padding-left: 1rem;
+}
+.icon-large{
+    width: 3rem;
+    height: auto;
+    padding: 1rem;
+}
+.icon-h{
+    width: 4.2rem;
+    height: auto;
+    padding: 0.3rem 1rem;
+}
+.icon-small{
+    width: 1.5rem;
+    height: auto;
+    padding: 1rem;
+}
+.screen{
+    max-width:210px;
+}
+.float-r{
+    text-align: right;
+    margin-left: 20%;
+    box-sizing: border-box;
+    float:right;
+}
+@for $i from 1 through 20 {
+    .m-#{$i} {
+        margin: #{0.5 * $i}rem;
+    }
+    .mt-#{$i} {
+        margin-top: #{0.5 * $i}rem;
+    }
+    .mb-#{$i} {
+        margin-bottom: #{0.5 * $i}rem;
+    }
+    .pt-#{$i} {
+        padding-top: #{0.5 * $i}rem;
+    }
+}

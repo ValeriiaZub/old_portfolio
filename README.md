@@ -1,20 +1,11 @@
-# I'm a big title
+# Portfolio
 
-im a paragraph
+Hi im val
 
-## I'm a sub title
+## Setup Development
 
-```sh
-git add .
+Start compiling css
+
+```bash
+sass --watch ./scss/main.scss ./css/main.css
 ```
-
-Hey, don't worry `k`
-
-to save changes
-
-#### Smoll title
-
-~hello?~
-
-This is just an example of markdown language
-

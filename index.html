@@ -1,130 +1,154 @@
+<!--------- Thank you for looking at my code :) ---------->
 <!DOCTYPE html>
-<!-- Thank you for looking at my code ;)-->
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Valeriia Zub's portfolio website with examples of work, experience. Home page.">
-    <link rel="stylesheet" href="/css/design.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="../img/favicon.svg" type="image/gif">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link
-        href="https://fonts.googleapis.com/css?family=Darker+Grotesque:500|Lexend+Deca|Mansalva&display|Lato&display=swap"
-        rel="stylesheet">
     <title>Valeriia Zub</title>
 </head>
 
 <body>
-    <div id="head">
-        <div id="canvasContainer"></div>
-        <div class="top-nav floating" id="section1">
-            <a href="index.html"><img class="content-image link-nav" src="images/assestYellow.svg" alt="logo"></a>
+    <div class="root">
+        <header>
+            <a href="index.html"><img class="logo" src="/img/logo.svg"></a>
+        </header>
+
+        <div class="grid col-2 to-col-1">
+            <section class="mar-b-phone-2rem mt-10" data-aos="fade-right">
+                <h1>Hi! I’m Val!</h1>
+                <p class="bio mb-6">& I respond to user needs in a novel way.</p>
+                <a target="_blank"
+                    href="https://drive.google.com/file/d/1ZCazXsUOgQsKdGIRm_leTibaBhUb_Apn/view?usp=sharing"
+                    class="btn-primary">
+                    <i class="far fa-file"></i>Resume
+                </a>
+                <a href="mailto:val.zubb@gmail.com" class="btn-secondary">
+                    <i class="far fa-envelope"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/valeriia-zub-69436a18b/" class="btn-secondary">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </section>
+            <img class="add-pad-10" src="/img/main-p-me.png" data-aos="fade-left" data-aos-duration="2000">
         </div>
-    </div>
-    <div class="grad"></div>
-    <div class="intro-box">
-        <p class="description side-line" id="about-me-para" data-aos="fade" data-aos-duration="3000">
-            I play squash 🏸, love travelling ✈️ <br> And can't imagine my life without clean and simple design 🙃
-        </p>
-        <p class="description" id="resume-lnk" data-aos="fade" data-aos-duration="3000">
-            <a class="link" href="https://drive.google.com/file/d/14274YLzyoODYDIHNzuFP1EX_FX75mamX/view?usp=sharing"
-                target="_blank">Click here to look at my resume</a>
-        </p>
-    </div>
-    <div class="grid-2-col sections" data-aos="fade-up" data-aos-duration="3000">
-        <a href="/pages/powerSmart.html" class="rec-link shadow">
-            <img src="images/powerSmart.png" class="content-image" alt="Iphone mock up with the logo on the home page">
-            <p class="date-in-box">September - December 2019</p>
-            <ul class="list-used-meth ">
-                <li class="list-item-used-meth shadow">
-                    Adobe Creative Cloud
-                </li>
-                <li class="list-item-used-meth shadow">
-                    HTML/CSS/JS
-                </li>
-                <li class="list-item-used-meth shadow">
-                    THREE JS
-                </li>
-                <li class="list-item-used-meth shadow">
-                    Cinema4D
-                </li>
-                <li class="list-item-used-meth shadow">
-                    Interactive experience
-                </li>
-            </ul>
+        <a href="#scroll-to" class="no-decoration centered add-top-mar">
+            Let me show you my work
+            <i class="fas fa-arrow-down"></i>
         </a>
 
-        <a href="/pages/audi.html" class="rec-link shadow">
-            <img src="/images/audi.png" class="content-image" alt="Audi loading screen">
-            <p class="date-in-box">November 2019</p>
-            <ul class="list-used-meth">
-                <li class="list-item-used-meth shadow">
-                    UX/UI
-                </li>
-                <li class="list-item-used-meth shadow">
-                    Prortotyping
-                </li>
-                <li class="list-item-used-meth shadow">
-                    Adobe Creative Cloud
-                </li>
-            </ul>
-        </a>
-
-        <a href="/pages/brigades.html" class="rec-link shadow">
-            <img src="/images/brigades_1-min.png" class="content-image"
-                alt="different pages of the app for the Engeneering brigade is open on phones">
-            <p class="date-in-box">October 2019</p>
-            <ul class="list-used-meth">
-                <li class="list-item-used-meth shadow">
-                    UX/UI
-                </li>
-                <li class="list-item-used-meth shadow">
-                    Adobe Creative Cloud
-                </li>
-                <li class="list-item-used-meth shadow">
-                    Prototyping
-                </li>
-            </ul>
-        </a>
-        <a href="/pages/weather.html" class="rec-link shadow">
-            <img class="content-image" src="/images/weather_2.png" alt="weather website on iPad">
-            <p class="date-in-box">April 2019</p>
-            <ul class="list-used-meth ">
-                <li class="list-item-used-meth shadow">
-                    UX/UI
-                </li>
-                <li class="list-item-used-meth shadow">
-                    HTML/CSS
-                </li>
-                <li class="list-item-used-meth shadow">
-                    JavaScript
-                </li>
-                <li class="list-item-used-meth shadow">
-                    API
-                </li>
-
-            </ul>
-        </a>
+        <section id="scroll-to">
+            <a class="card" href="./pages/mentorSpace.html">
+                <div class="card__header">
+                    <img class="mt-5 card__header__img" src="/img/icon-mentoring.png" />
+                </div>
+                <div class="card__content">
+                    <h2>Design Solution for Mentors and Mentees.</h2>
+                    <p>A key for mentors and mentees to help find each other, connect and collaborate.</p>
+                    <div class="tags">
+                        <div class="tag">Prototyping</div>
+                        <div class="tag">UX/UI</div>
+                        <div class="tag">User Research</div>
+                    </div>
+                </div>
+            </a>
+            <a class="card" href="./pages/light.html">
+                <div class="card__header">
+                    <img class="mt-5 card__header__img" src="/img/icon-enviromnet.png" />
+                </div>
+                <div class="card__content">
+                    <h2>A Small Story about Light Pollution.</h2>
+                    <p>Interactive web experience that introduces to global light pollution.</p>
+                    <div class="tags">
+                        <div class="tag">C4D</div>
+                        <div class="tag">Three JS</div>
+                        <div class="tag">Story Telling </div>
+                    </div>
+                </div>
+            </a>
+            <a class="card" href="./pages/audi.html">
+                <div class="card__header">
+                    <img class="mt-5 card__header__img" src="/img/icon-audi.png" />
+                </div>
+                <div class="card__content">
+                    <h2>Web application — solution to onboard users with myAudi app.</h2>
+                    <p>2nd place Audi Red hackathon, competition inspired by the theme “mobility as a service”.</p>
+                    <div class="tags">
+                        <div class="tag">Prototyping</div>
+                        <div class="tag">UX/UI</div>
+                        <div class="tag">User Research</div>
+                    </div>
+                </div>
+            </a>
+            <a class="card" href="/pages/playground.html">
+                <div class="card__header">
+                    <img class="mt-5 card__header__img" src="/img/icon-playground.png" />
+                </div>
+                <div class="card__content">
+                    <h2>Playground!</h2>
+                    <p>There are projects I did not put in here, but I still would like to share my progress/final
+                        outcome with you :)</p>
+                    <div class="tags">
+                        <div class="tag">From design to code and 3D-modeling</div>
+                    </div>
+                </div>
+            </a>
+        </section>
     </div>
-    <div class="to-top centered-block"><a class="link-to-top shadow" href="#section1">
-            <div class="disappear centered-in">Return</div><i class="fas fa-arrow-up icon-to-top centered-in"></i>
-        </a></div>
-    <footer>
-        <a href="mailto:val.zubb@gmail.com" class=""><i class="fas fa-envelope link icon"></i></a> <a
-            href="https://www.linkedin.com/in/valeriia-zub-69436a18b/" class="link" target="_blank"> <i
-                class="fab fa-linkedin-in link icon"></i></a> <a class="link no-line"
-            href="https://drive.google.com/file/d/14274YLzyoODYDIHNzuFP1EX_FX75mamX/view?usp=sharing"
-            target="_blank">resume</a>
+    <footer class="bottom-end">
+        <div class="bottom-end__image">
+            <img src="./img/footer.png">
+        </div>
+        <div class="bottom-end__border"></div>
+        <div class="bottom-end__content to-col-1">
+            <section>
+                <h3 class="mb-3">
+                    Are you looking for an active team-player? Who is passionate and attentive to details designer? Who is an empathetic explorer
+                    and always dreaming and ready for challenge workaholic?
+                </h3>
+                <a href="mailto:val.zubb@gmail.com" class="btn-primary">
+                    Let’s get in touch!
+                </a>
+            </section>
+            <section class='text-align-right al-left-phone'>
+                <h4>
+                    Valeriia Zub
+                </h4>
+                <a href="mailto:val.zubb@gmail.com" class="btn-secondary">
+                    <i class="far fa-envelope"></i>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/valeriia-zub-69436a18b/" class=" btn-secondary ">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </section>
+        </div>
+
+
     </footer>
     <script>
         AOS.init();
+
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1000, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
     </script>
-    <script src="/lib/p5.min.js"></script>
 </body>
 
 </html>

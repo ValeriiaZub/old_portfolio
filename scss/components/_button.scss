@@ -1,0 +1,39 @@
+$button-bg-color: #EFE7F6;
+
+.btn {
+    font-size: $normal;
+    padding: $small $normal;
+    border-radius: $large;
+    font-family: heavy;
+    color: $primary-color-1;
+    border: none;
+    text-decoration: none;
+    transition: 0.15s;
+
+    i{
+        padding-left: none;
+        margin: none;
+        font-size: $normal;
+    }
+
+}
+
+.btn-primary {
+    @extend .btn;
+    background-color: $button-bg-color;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $primary-color-2;
+        color: white;
+        i{
+            color: white;
+        }
+    }
+}
+
+.btn-secondary {
+    @extend .btn;
+    font-size: $normal;
+    background-color: transparent;
+}

@@ -1,0 +1,31 @@
+.grid{
+    display: grid;
+    grid-gap: $small;
+}
+.col-2{
+    grid-template-columns: 1fr 1fr;
+}
+.col-3{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.col-4{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.col-7{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.col4-8{
+    grid-template-columns: 4fr 8fr;
+}
+.col-1-7{
+    grid-template-columns: 0.5fr 7fr;
+    width: 80%
+}
+.grid-gap-2r{
+    grid-gap: 2rem;
+}
+.inline >*{
+display: flex;
+flex-direction: row;
+position: relative;
+}

@@ -1,0 +1,23 @@
+.bot_nav{
+    min-height: 100px;
+
+    &__link_to_next_page{
+        width:100%;
+        min-height: 70px;
+        padding: 1rem 0;
+        text-align: center;
+        text-transform: capitalize;
+        text-decoration: none;
+        background-color: $button-bg-color;
+        font-size: $regular;
+        border-radius: $regular;
+        transition: 0.2s;
+        box-sizing: border-box;
+
+        &:hover{
+            background-color: $secondary-color;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
