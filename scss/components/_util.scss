@@ -5,7 +5,7 @@
 
 .logo{
     width: 3rem;
-    padding: 1rem 0 3rem;
+    padding: 1rem 0 1rem;
     box-sizing: border-box;
 }
 .no-mar-top {
@@ -44,6 +44,9 @@
 }
 .m-w-500{
     max-width: 500px;
+}
+.m-w-400{
+    max-width: 400px;
 }
 .accent-box{
     border-left: 3px solid $primary-color-1;

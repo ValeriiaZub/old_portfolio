@@ -3,7 +3,7 @@
 
     &__link_to_next_page{
         width:100%;
-        min-height: 70px;
+        height: 270px;
         padding: 1rem 0;
         text-align: center;
         text-transform: capitalize;
@@ -13,6 +13,15 @@
         border-radius: $regular;
         transition: 0.2s;
         box-sizing: border-box;
+
+        img{
+            height: 90%;
+            width: auto;
+            display: block;
+            margin: auto;
+            box-sizing: border-box;
+            padding: 1rem;
+        }
 
         &:hover{
             background-color: $secondary-color;

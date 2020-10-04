@@ -23,11 +23,13 @@
         &__img {
             display: block;
             margin: auto;
-            width: 210px;
+            width: 100%;
+            max-width: 400px;
         }
     }
 
     &__content {
+        margin: auto 1rem auto;
         width: 100%;
         
     }

@@ -2,13 +2,17 @@
     position: relative;
 
     &__image {
-        margin-left: 60%;
+        margin: auto;
+        display: block;
         min-width: 250px;
-        max-width: 300px;
-        overflow: hidden;
+        max-width: 400px;
         box-sizing: border-box;
-    }
 
+
+    }
+&__image > img{
+    margin-top: -67px;
+}
     &__content {
         padding: 2rem $margin-root-desktop;
         margin-top: -28px;

@@ -153,9 +153,11 @@ a i {
 .card__header__img {
   display: block;
   margin: auto;
-  width: 210px;
+  width: 100%;
+  max-width: 400px;
 }
 .card__content {
+  margin: auto 1rem auto;
   width: 100%;
 }
 
@@ -188,11 +190,14 @@ a i {
   position: relative;
 }
 .bottom-end__image {
-  margin-left: 60%;
+  margin: auto;
+  display: block;
   min-width: 250px;
-  max-width: 300px;
-  overflow: hidden;
+  max-width: 400px;
   box-sizing: border-box;
+}
+.bottom-end__image > img {
+  margin-top: -67px;
 }
 .bottom-end__content {
   padding: 2rem 20%;
@@ -228,7 +233,7 @@ a i {
 
 .logo {
   width: 3rem;
-  padding: 1rem 0 3rem;
+  padding: 1rem 0 1rem;
   box-sizing: border-box;
 }
 
@@ -276,6 +281,10 @@ a i {
 
 .m-w-500 {
   max-width: 500px;
+}
+
+.m-w-400 {
+  max-width: 400px;
 }
 
 .accent-box {
@@ -706,7 +715,7 @@ li:before {
 }
 .bot_nav__link_to_next_page {
   width: 100%;
-  min-height: 70px;
+  height: 270px;
   padding: 1rem 0;
   text-align: center;
   text-transform: capitalize;
@@ -716,6 +725,14 @@ li:before {
   border-radius: 1rem;
   transition: 0.2s;
   box-sizing: border-box;
+}
+.bot_nav__link_to_next_page img {
+  height: 90%;
+  width: auto;
+  display: block;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 .bot_nav__link_to_next_page:hover {
   background-color: #827BD3;
