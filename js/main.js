@@ -55,7 +55,7 @@ window.addEventListener("resize", (ev) => {
 })
 
 function preload() {
-    introObj = loadModel('/assets/intro6.obj');
+    introObj = loadModel('/portfolio-header/assets/intro6.obj');
     windowX = window.innerWidth;
     windowY = window.innerHeight;
 }
