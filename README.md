@@ -10,7 +10,7 @@ Start compiling css
 sass --watch ./scss/main.scss ./css/main.css
 ```
 
-## Updating websute
+## Updating website
 
 1. do your changes (please no files bigger then 10mb)
 2. run `git add .`. This will add all your changes to a staging area
