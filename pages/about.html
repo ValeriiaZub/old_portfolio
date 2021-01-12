@@ -1,0 +1,128 @@
+<!--------- Thank you for looking at my code :) ---------->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/main.css" type="text/css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="../img/favicon.svg" type="image/gif">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Valeriia Zub</title>
+</head>
+
+<body>
+    <div class="root">
+        <header class="nav">
+            <a href="../index.html"><img class="logo" src="/img/logo.svg"></a>
+            <a href="about.html" class="no-underline">About me</a>
+        </header>
+
+        <div class="grid col-2 to-col-1">
+            <img class="mt-5 img-80" src="../img/about/valeriia-pictures.png" data-aos="fade" data-aos-duration="2000">
+            <div class="mar-b-phone-2rem al-ver" data-aos="fade-right">
+                <h5>As a person...</h5>
+                <p class=" mb-6">I was born in Ukraine, a country of sunshine, wheat, and genially kind, and talented people. My parents were always trying to raise a human from me, a considerate persona. 
+
+                   <br><br> I love hiking, skiing,  playing squash. But my significant portion of creativity mostly comes from traveling, discovering new cultures and cuisines. Yoga and watercolor is my recent hobby.
+                    </p>
+                </div>
+        </div>
+
+        <section>
+            <h5>As a professional...</h5>
+            <p>
+                My grades have been best across my high school, I have finished art fundamentals when I was 14. From being able to draw architecture and human body academically I have shifted my focus to code and human centered design once I came to Sheridan College to study Bachelor of Interaction Design. 
+            </p>
+            <p>
+                During my second year I have grasped a power of tutoring and mentoring as I helped students learn HTML&CSS. In the past year I have devoted time learning hot to work in an agile environment, as a part of a team as a joined a few non-profits as a volunteer and a few granted studies.
+            </p>
+            <p>
+                Now I am a president of a <a class="link-small" href="https://www.hackademics.club" target="_blank">student club hackademics</a> currently organizing <a class="link-small" href="https://hackville.io" target="_blank"> hackville 2021</a> , first online Sheridan Hackathon. I am also working with Youth Shallenge International, a non-profit, on creation a solution for all the green committees to connect.  
+
+            </p>      
+            <p>
+                And always looking for an awesome project to work on!
+            </p>
+
+        
+            </section>
+
+            <section class="bot-nav mt-15">
+                <h5 class="centered">
+                    Discover my work!
+                </h5>
+                <div class="grid col-3 to-col-1  mt-5">   
+                    <a class="bot_nav__link_to_next_page al-ver" href="./mentorSpace.html">
+                        Design Solution for Mentors and Mentees.
+                        <img src="../img/mentorSpace/final-screens.png">
+                    </a>
+                    <a class="bot_nav__link_to_next_page al-ver" href="./light.html">
+                        A Small Story about Light Pollution.
+                        <img src="../img/light/mock-up.png">
+                    </a>
+                    <a class="bot_nav__link_to_next_page al-ver" href="./audi.html">
+                        Web application — solution to onboard users with myAudi app.
+                        <img src="../img/audi/mainscreen.png">
+                    </a>
+                </div>
+    
+            </section>
+    
+        </div>
+    
+        <footer class="bottom-end">
+            <div class="bottom-end__image">
+                <div class="bottom-end__border"></div>
+                <img src="../img/home/look-up.png">
+            </div>
+            <div class="bottom-end__content to-col-1" id="pointing">
+                <section>
+                    <h3 class="mb-3">
+                        Don’t leave yet, I have more projects to show!
+                        Use navigation to see them! Or are you ready for a team-up? Email me, we will have a conversation!
+                    </h3>
+                    <a href="mailto:val.zubb@gmail.com" class="btn-primary">
+                        Let’s get in touch!
+                    </a>
+                </section>
+                <section class='text-align-right'>
+                    <h4>
+                        Valeriia Zub
+                    </h4>
+                    <a href="mailto:val.zubb@gmail.com" class="btn-secondary">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/valeriia-zub-69436a18b/" class=" btn-secondary ">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </section>
+            </div>
+    
+    
+        </footer>
+    </div>
+        <script>
+            AOS.init();
+    
+            $(document).ready(function () {
+                $("a").on('click', function (event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 1000, function () {
+                            window.location.hash = hash;
+                        });
+                    }
+                });
+            });
+        </script>
+    </body>
+    
+    </html>

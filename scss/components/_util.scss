@@ -87,7 +87,17 @@
     .mb-#{$i} {
         margin-bottom: #{0.5 * $i}rem;
     }
+    .mr-#{$i} {
+        margin-right: #{0.5 * $i}rem;
+    }
+    .ml-#{$i} {
+        margin-left: #{0.5 * $i}rem;
+    }
     .pt-#{$i} {
         padding-top: #{0.5 * $i}rem;
     }
+    .pr-#{$i} {
+        padding-right: #{0.5 * $i}rem;
+    }
 }
+

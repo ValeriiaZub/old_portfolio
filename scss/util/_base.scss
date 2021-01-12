@@ -56,6 +56,11 @@ img {
     width: 100%;
 }
 
+.img-80{
+    width: 80%;
+    margin: auto;
+}
+
 section {
     margin: 2rem 0 8rem;
 }
@@ -76,4 +81,8 @@ a{
     i{
         font-size: $normal;
     }
+}
+
+.link-small{
+    font-size: $regular;
 }
