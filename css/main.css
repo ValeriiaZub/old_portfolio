@@ -1032,6 +1032,11 @@ li:before {
   .hide {
     display: none;
   }
+
+  .bot_nav__link_to_next_page {
+    height: 100%;
+    width: auto;
+  }
 }
 @media only screen and (max-width: 767px) {
   .root {

@@ -33,6 +33,14 @@
     .hide{
         display: none;
     }
+    .bot_nav{
+    
+        &__link_to_next_page{
+            height: 100%;
+            width: auto;
+
+        }
+    }
 }
 @media only screen and (max-width: $breakpoints-phone) {
     .root {
